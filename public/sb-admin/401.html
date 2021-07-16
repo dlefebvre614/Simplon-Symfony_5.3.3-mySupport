@@ -1,3 +1,5 @@
+<!-- make to twig : header, error404content, footer_error -->
+<!-- start of templates/shared/sb-admin/_header_error.html.twig -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,11 +8,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>404 Error - SB Admin</title>
+        <title>*** 404 Error - mySupport</title>
         <link href="css/styles.css" rel="stylesheet" />
         <script src="js/all.min.js" crossorigin="anonymous"></script>
     </head>
     <body>
+    <!-- end of templates/shared/sb-admin/_header_error.html.twig -->
+
+        <!-- start of templates/sb-admin/error404.html.twig -->
         <div id="layoutError">
             <div id="layoutError_content">
                 <main>
@@ -31,22 +36,31 @@
                     </div>
                 </main>
             </div>
+            <!-- end of templates/sb-admin/error404.html.twig -->
+
+            <!-- start of templates/shared/sb-admin/_footer_error.html.twig -->
             <div id="layoutError_footer">
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2021</div>
+                            <!-- start of templates/shared/sb-admin/_policy_terms.html.twig -->
+                            <div class="text-muted">Copyright &copy; Twig: mySupport 2021</div>
                             <div>
-                                <a href="#">Privacy Policy</a>
+                                <a href="https://en.wikipedia.org/wiki/Privacy_policy">Privacy Policy</a>
                                 &middot;
-                                <a href="#">Terms &amp; Conditions</a>
+                                <a href="https://en.wikipedia.org/wiki/Contractual_term">Terms &amp; Conditions</a>
                             </div>
+                            <!-- end of templates/shared/sb-admin/_policy_terms.html.twig -->
                         </div>
                     </div>
                 </footer>
             </div>
         </div>
-        <script src="s/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <!-- end of templates/shared/sb-admin/_footer_error.html.twig -->
+
+        <!-- start of templates/shared/sb-admin/_js_footer_error.html.twig -->
+        <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>
+<!-- end of templates/shared/sb-admin/_js_footer_error.html.twig -->

@@ -1,3 +1,4 @@
+<!-- see register.html -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,12 +10,12 @@
     <meta name="author" content="" />
     <title>Password Reset - SB Admin</title>
     <link href="css/styles.css" rel="stylesheet" />
-    <script src="js/all.min.js"
-        crossorigin="anonymous"></script>
+    <script src="js/all.min.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-primary">
-    <div style="background-size: cover; background-image: url('../clean/assets/img/passord.jpg');">
+    <!-- start of templates/reset-password/reset.html.twig bundle user -->
+    <div style="background-size: cover; background-image: url('../clean/assets/img/reset.jpg');">
         <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
                 <main>
@@ -49,15 +50,17 @@
                     </div>
                 </main>
             </div>
+
+            <!-- start of templates/shared/sb-admin/_footer_autentification.html.twig -->
             <div id="layoutAuthentication_footer">
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2021</div>
+                            <div class="text-muted">Copyright &copy; Twig: mySupport 2021</div>
                             <div>
-                                <a href="#">Privacy Policy</a>
+                                <a href="https://en.wikipedia.org/wiki/Privacy_policy">Privacy Policy</a>
                                 &middot;
-                                <a href="#">Terms &amp; Conditions</a>
+                                <a href="https://en.wikipedia.org/wiki/Contractual_term">Terms &amp; Conditions</a>
                             </div>
                         </div>
                     </div>
@@ -65,9 +68,12 @@
             </div>
         </div>
     </div>
-    <script src="js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
+    <!-- end of templates/shared/sb-admin/_footer_authentification.html.twig -->
+
+    <!-- start of templates/shared/sb-admin/_js_footer_error.html.twig -->
+    <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 
 </html>
+<!-- end of templates/shared/sb-admin/_js_footer_error.html.twig -->
