@@ -4,14 +4,14 @@
 
 <head>
   <meta charset="utf-8">
-  <title> *** mySupport - Subscriber twig *** </title>
+  <title>mySupport - Technician view </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/prism-okaidia.css">
   <link rel="stylesheet" href="css/custom.min.css">
   <!-- Global Site Tag (gtag.js) - Google Analytics -->
-  <script async src="js/gtag.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23019901-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
@@ -26,8 +26,9 @@
 
   <!--Start SEO-->
   <h1 hidden>SEO: Subscriber: Askes help save time.</h1>
-  <h1 hidden>SEO: Technician: Helps the subscriber save time.</h1>
+  <h1 class="text-center">The technician Helps the Subscriber save time.</h1>
   <h1 hidden>SEO: Administrator: Helps the customer improve their application.</h1>
+  <h1 hidden>SEO: The customer improves their application.</h1>
   <!--End SEO-->
 
   <!-- start of templates/shared/darkly/_navbar.html.twig -->
@@ -50,7 +51,7 @@
             <a class="nav-link" href="../clean/post.html">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../clean/post.html">Pricing</a>
+            <a class="nav-link" href="../clean/post.html">Rates</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../clean/about.html">About</a>
@@ -60,7 +61,7 @@
               aria-expanded="false">Account</a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="../sb-admin/register.html">Register</a>
-              <a class="dropdown-item" href="../sb-admin/password.html">Password</a>
+              <a class="dropdown-item" href="../sb-admin/reset.html">Password</a>
               <a class="dropdown-item" href="../sb-admin/login.html">Login</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="../clean/index.html">Logout</a>
@@ -176,89 +177,83 @@
       <div class="d-flex mb-4 mx-3 justify-content-center">
         <!--<div class="card border-success" style="min-width: 40rem; max-width: 40rem;">-->
         <div class="card border-info" style="min-width: 10rem;">
-          <div class="card-header"><img width="18%" src="../shortLogo.png"> My ask help </div>
+          <div class="card-header"><img width="18%" src="../shortLogo.png"> his application for assistance </div>
           <div class="card-body">
             <form>
               <fieldset>
-                <legend>*** Hello Mr. DURANT ***</legend>
+                <legend>Hello Mr. DURANT</legend>
                 <div class="form-group row">
-                  <label for="staticEmail" class="col-sm-5 col-form-label">Email</label>
+                  <label for="staticEmail" class="col-sm-5 col-form-label text-success">Email</label>
                   <div class="col-sm-7">
                     <input type="text" readonly="" class="form-control-plaintext" id="staticEmail"
                       value="email@example.com">
                   </div>
                 </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1" class="form-label mt-4">Change my mail address, if I
-                    want</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter email">
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                    else. (Empty = no change)</small>
+
+                <div class="form-group row">
+                  <label for="staticEmail" class="col-sm-5 col-form-label text-success">Phone number</label>
+                  <div class="col-sm-7">
+                    <input type="text" readonly="" class="form-control-plaintext" id="staticPhone" value="1234567890">
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label for="exampleSelect1" class="form-label mt-4">I choose the difficulty concerned</label>
-                  <select class="form-select" id="exampleSelect1">
-                    <option>I have a 404 error on</option>
-                    <option>I have a 401 error on</option>
-                    <option>I have a 500 error on</option>
-                    <option>I have a 500 error on</option>
-                    <option>my app is unavailable</option>
-                    <option>my application is slow</option>
-                    <option>I don't know how to use my app</option>
-                    <option>my new difficulty explained in the text field</option>
-                  </select>
+
+                <div class="form-group row">
+                  <label for="staticEmail" class="col-sm-5 col-form-label text-success">Difficulty</label>
+                  <div class="col-sm-7">
+                    <input type="text" readonly="" class="form-control-plaintext" id="staticDifficulty"
+                      value="explained in the text field">
+                  </div>
                 </div>
+
                 <div class="form-group">
-                  <label class="col-form-label mt-4" for="inputDefault">On URL</label>
-                  <input type="text" value="http ..." class="form-control" placeholder="Default input" id="inputDefault">
+                  <label class="col-form-label mt-4 text-success" for="inputDefault">URL</label>
+                  <input type="text" readonly=""
+                    value="https://www.bing.com/search?q=traduction+google&form=ANNTH1&refig=1750db2663d04d14be96b34874111017&sp=2&qs=AS&pq=traduction&sk=AS1&sc=8-10&cvid=1750db2663d04d14be96b34874111017&form=TTSREF&isTTRefreshQuery=1"
+                    class="form-control" placeholder="Default input" id="inputDefault">
                 </div>
-                <div class="form-group">
-                  <label for="exampleSelect1" class="form-label mt-4">I choose the tool concerned</label>
-                  <select class="form-select" id="exampleSelect1">
-                    <option>my internet explorer</option>
-                    <option>my tool 2</option>
-                    <option>my tool 3</option>
-                    <option>my new tool explained in the text field</option>
-                  </select>
+
+                <div class="form-group row">
+                  <label for="staticEmail" class="col-sm-5 col-form-label text-success">Tool</label>
+                  <div class="col-sm-7">
+                    <input type="text" readonly="" class="form-control-plaintext" id="staticTool"
+                      value="Internet Explorer">
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label for="exampleSelect1" class="form-label mt-4">I choose the terminal concerned</label>
-                  <select class="form-select" id="exampleSelect1">
-                    <option>my pc at home</option>
-                    <option>my Tablet</option>
-                    <option>my Mobile</option>
-                    <option>my pc at office</option>
-                    <option>my wife's pc</option>
-                    <option>my new terminal explained in the text field</option>
-                  </select>
+
+                <div class="form-group row">
+                  <label for="staticEmail" class="col-sm-5 col-form-label text-success">Terminal</label>
+                  <div class="col-sm-7">
+                    <input type="text" readonly="" class="form-control-plaintext" id="staticTerminal"
+                      value="my pc at home">
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label for="exampleSelect1" class="form-label mt-4">I choose the application concerned</label>
-                  <select class="form-select" id="exampleSelect1">
-                    <option>my Appli 1</option>
-                    <option>my Appli 2</option>
-                    <option>my Appli 3</option>
-                    <option>my Appli 4</option>
-                    <option>my new Application explained in the text field</option>
-                  </select>
+
+                <div class="form-group row">
+                  <label for="staticEmail" class="col-sm-5 col-form-label text-success">Application</label>
+                  <div class="col-sm-7">
+                    <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="Appli 1">
+                  </div>
                 </div>
+
                 <div class="form-group">
-                  <label for="exampleTextarea" class="form-label mt-4">I explain my problem from what and on what. (text field)</label>
-                  <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-                  <small id="emailHelp" class="form-text text-muted">On which app, on which terminal, on which tool: what problem ... (stretch field at the bottom right)</small>
+                  <label for="explanationTextarea" class="form-label mt-4 text-success">Explanation</label>
+                  <textarea id="explanationTextarea" class="form-control" readonly="" value=""
+                    rows="3">On which app 1, on my pc at home, with Internet Explorer: I have error404 on https://www.bing.com/search?q=traduction+google&form=ANNTH1&refig=1750db2663d04d14be96b34874111017&sp=2&qs=AS&pq=traduction&sk=AS1&sc=8-10&cvid=1750db2663d04d14be96b34874111017&form=TTSREF&isTTRefreshQuery=1</textarea>
+                  <small id="explanationTextarea" class="form-text text-muted">On which app, on which terminal, on which
+                    tool: what problem ... (stretch field at the bottom right)</small>
                 </div>
+
                 <div class="form-group">
-                  <label for="formFile" class="form-label mt-4">I show you a screenshot</label>
+                  <label for="formFile" class="form-label mt-4 text-success">File</label>
                   <input class="form-control" type="file" id="formFile">
                 </div>
-                  <legend class="mt-4">My subscribe</legend>
-                  <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked="">
-                    <label class="form-check-label" for="flexSwitchCheckChecked">I am a subscriber</label>
-                    <br><small id="emailHelp" class="form-text text-muted">If I unsubscribe, I no longer submit a support request (the current month is due)</small>
-                  </div>
-                </fieldset>
+                <legend class="mt-4">My subscribe</legend>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked="">
+                  <label class="form-check-label" for="flexSwitchCheckChecked">I am a subscriber</label>
+                  <br><small id="flexSwitchCheckChecked" class="form-text text-muted">If I unsubscribe, I no longer
+                    submit a support request (the current month is due)</small>
+                </div>
                 <button type="submit" class="btn right btn-primary">Submit</button>
               </fieldset>
             </form>
@@ -341,9 +336,23 @@
   </div>
   <!-- end of Our answers model -->
 
-  <!-- start of Subscriber model -->
-
-  <!-- end of Subscriber model -->
+  <!-- start of footer sb-admin login model model -->
+  <div id="layoutAuthentication_footer">
+    <footer class="py-4 bg-white mt-auto">
+      <div class="container-fluid px-4">
+        <div class="d-flex align-items-center justify-content-between small">
+          <div class="text-muted">Copyright &copy; mySupport 2021</div>
+          <img src="../clean/assets/img/Sponsors.png" width="50%">
+          <div>
+            <a target="Policy" href="https://en.wikipedia.org/wiki/Privacy_policy">Privacy Policy</a>
+            &middot;
+            <a target="Conditions" href="https://en.wikipedia.org/wiki/Contractual_term">Terms &amp; Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- start of footer login sb-admin model -->
 
   <!-- start of templates/shared/darkly/_footer.html.twig -->
   <script src="js/jquery.min.js"></script>
