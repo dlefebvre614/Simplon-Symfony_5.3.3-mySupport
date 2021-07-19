@@ -61,7 +61,7 @@
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
               aria-expanded="false">Account</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="../sb-admin/register.html">Register</a>
+              <a class="dropdown-item" href="../sb-admin/steps.html">Register</a>
               <a class="dropdown-item" href="../sb-admin/reset.html">Password</a>
               <a class="dropdown-item" href="../sb-admin/login.html">Login</a>
               <div class="dropdown-divider"></div>
@@ -95,10 +95,10 @@
                 <button id="btnGroupDrop4" type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false"></button>
                 <div class="dropdown-menu" aria-labelledby="btnGroupDrop4">
-                  <a class="btn btn-success" href="#">My appli 1</a>
-                  <a class="btn btn-warning" href="#">My appli 2</a>
-                  <a class="dropdown-item" href="#">My appli 3</a>
-                  <a class="btn btn-danger" href="#">My appli 4</a>
+                  <a class="btn btn-success" target="Google" href="https://www.google.fr/">Google.fr</a>
+                  <a class="btn btn-warning" target="DLC" href="http://did.lefebvre.conseil.online.fr/">Dlc.fr</a>
+                  <a class="btn btn-success" target="accounting" href="#">My accounting</a>
+                  <a class="btn btn-danger" target="simplon" href="https://simplon.co/">Simplon.co</a>
                 </div>
               </div>
             </div>
@@ -124,10 +124,10 @@
                 <button id="btnGroupDrop2" type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false"></button>
                 <div class="dropdown-menu" aria-labelledby="btnGroupDrop2">
-                  <a class="btn btn-success" href="#">My PC of home</a>
+                  <a class="btn btn-success" href="#">My PC at home</a>
                   <a class="dropdown-item" href="#">My Tablet</a>
                   <a class="dropdown-item" href="#">My Mobile</a>
-                  <a class="btn btn-warning" href="#">My PC of office</a>
+                  <a class="btn btn-warning" href="#">My PC at office</a>
                   <a class="btn btn-danger" href="#">The PC of my wife</a>
                 </div>
               </div>
@@ -168,6 +168,54 @@
                   <img src="assets/qrcode_localhost.png" width="160">
                 </div>
               </div>
+              <hr>
+              <h4 class="card-title">Update my contact information</h4>
+              <div class="card-body">
+                <form>
+                  <div class="row mb-3">
+                    <div class="col-md-6">
+                      <div class="form-floating mb-3 mb-md-0">
+                        <input readonly="" value="Jacques" class="form-control" id="inputFirstName" type="text"
+                          placeholder="Enter your first name" />
+                        <label value="Jacques" for="inputFirstName">First name</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input readonly="" value="DURANT" class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" />
+                        <label for="inputLastName">Last name</label>
+                      </div>
+                    </div>
+                  </div>
+                  <label for="inputAddress">Post address: number, type, street, name, postal code, city, country
+                    (Complement: staircase, floor, door number, entrance code, location, informations).</label>
+                  <div class="form-group">
+                    <!-- wisiwig -->
+                    <textarea class="form-control" id="exampleTextarea" rows="9">75 bis rue de la Marlière, 78310 Maurepas France (C'est la maison au fond à gauche dans l'allée en gravillons)
+                    </textarea>
+                    <label for="exampleTextarea" class="form-label mt-4"></label>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-md-6">
+                      <div class="form-floating mb-3 mb-md-0">
+                        <input value="0777777777" class="form-control" id="inputMobile" type="text"
+                          placeholder="Enter your mobile" />
+                        <label for="inputFirstName">Mobile</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input value="01234567890" class="form-control" id="inputPhone" type="text"
+                          placeholder="Enter your phone" />
+                        <label for="inputLastName">Phone</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-4 mb-0">
+                    <div class="d-grid"><a class="btn btn-primary btn-block" href="subscriber_model.html">Update my contact information</a></div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -184,21 +232,14 @@
           <div class="card-body">
             <form>
               <fieldset>
-                <legend>Twig: Hello Mr. DURANT</legend>
-                <div class="form-group row">
-                  <label for="staticEmail" class="col-sm-5 col-form-label">Email</label>
-                  <div class="col-sm-7">
-                    <input type="text" readonly="" class="form-control-plaintext" id="staticEmail"
-                      value="Twig: email@example.com">
-                  </div>
-                </div>
+                <legend>Hello Mr. DURANT</legend>
                 <div class="form-group">
-                  <label for="exampleInputEmail1" class="form-label mt-4">Change my mail address, if I
+                  <label for="exampleInputEmail1" class="form-label mt-4">Change my mail address for login, if I
                     want</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  <input value="jacques.durant@example.com" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                     placeholder="Enter email">
                   <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                    else. (Empty = no change)</small>
+                    else. Update for login (Empty = no change)</small>
                 </div>
                 <div class="form-group">
                   <label for="exampleSelect1" class="form-label mt-4">I choose the difficulty concerned</label>
@@ -241,7 +282,7 @@
                 <div class="form-group">
                   <label for="exampleSelect1" class="form-label mt-4">I choose the application concerned</label>
                   <select class="form-select" id="exampleSelect1">
-                    <option>my Appli 1</option>
+                    <option>Google.fr</option>
                     <option>my Appli 2</option>
                     <option>my Appli 3</option>
                     <option>my Appli 4</option>
