@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>mySupport - Subscriber view</title>
+  <title>Subscriber - mySupport</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -68,6 +68,11 @@
               <a class="dropdown-item" href="../clean/index.html">Logout</a>
             </div>
           </li>
+          <!-- start only on subscriber model and technicien model -->
+          <li class="nav-item">
+            <a class="nav-link" href="../darkly/helps_model.html">List of applications for help</a>
+          </li>
+          <!-- end only on subscriber model and technicien model -->
         </ul>
         <form class="d-flex">
           <input class="form-control me-sm-2" type="text" placeholder="Search">
@@ -168,54 +173,56 @@
                   <img src="assets/qrcode_localhost.png" width="160">
                 </div>
               </div>
-              <hr>
-              <h4 class="card-title">Update my contact information</h4>
-              <div class="card-body">
-                <form>
-                  <div class="row mb-3">
-                    <div class="col-md-6">
-                      <div class="form-floating mb-3 mb-md-0">
-                        <input readonly="" value="Jacques" class="form-control" id="inputFirstName" type="text"
-                          placeholder="Enter your first name" />
-                        <label value="Jacques" for="inputFirstName">First name</label>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-floating">
-                        <input readonly="" value="DURANT" class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" />
-                        <label for="inputLastName">Last name</label>
-                      </div>
+            </div>
+            <hr>
+            <h4 class="card-title">Update my contact information</h4>
+            <div class="card-body">
+              <form>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <div class="form-floating mb-3 mb-md-0">
+                      <input readonly="" value="Jacques" class="form-control" id="inputFirstName" type="text"
+                        placeholder="Enter your first name" />
+                      <label value="Jacques" for="inputFirstName">First name</label>
                     </div>
                   </div>
-                  <label for="inputAddress">Post address: number, type, street, name, postal code, city, country
-                    (Complement: staircase, floor, door number, entrance code, location, informations).</label>
-                  <div class="form-group">
-                    <!-- wisiwig -->
-                    <textarea class="form-control" id="exampleTextarea" rows="9">75 bis rue de la Marlière, 78310 Maurepas France (C'est la maison au fond à gauche dans l'allée en gravillons)
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input readonly="" value="DURANT" class="form-control" id="inputLastName" type="text"
+                        placeholder="Enter your last name" />
+                      <label for="inputLastName">Last name</label>
+                    </div>
+                  </div>
+                </div>
+                <label for="inputAddress">Post address: number, type, street, name, postal code, city, country
+                  (Complement: staircase, floor, door number, entrance code, location, informations).</label>
+                <div class="form-group">
+                  <!-- wisiwig -->
+                  <textarea class="form-control" id="exampleTextarea" rows="9">75 bis rue de la Marlière, 78310 Maurepas France (C'est la maison au fond à gauche dans l'allée en gravillons)
                     </textarea>
-                    <label for="exampleTextarea" class="form-label mt-4"></label>
-                  </div>
-                  <div class="row mb-3">
-                    <div class="col-md-6">
-                      <div class="form-floating mb-3 mb-md-0">
-                        <input value="0777777777" class="form-control" id="inputMobile" type="text"
-                          placeholder="Enter your mobile" />
-                        <label for="inputFirstName">Mobile</label>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-floating">
-                        <input value="01234567890" class="form-control" id="inputPhone" type="text"
-                          placeholder="Enter your phone" />
-                        <label for="inputLastName">Phone</label>
-                      </div>
+                  <label for="exampleTextarea" class="form-label mt-4"></label>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <div class="form-floating mb-3 mb-md-0">
+                      <input value="0777777777" class="form-control" id="inputMobile" type="text"
+                        placeholder="Enter your mobile" />
+                      <label for="inputFirstName">Mobile</label>
                     </div>
                   </div>
-                  <div class="mt-4 mb-0">
-                    <div class="d-grid"><a class="btn btn-primary btn-block" href="subscriber_model.html">Update my contact information</a></div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input value="01234567890" class="form-control" id="inputPhone" type="text"
+                        placeholder="Enter your phone" />
+                      <label for="inputLastName">Phone</label>
+                    </div>
                   </div>
-                </form>
-              </div>
+                </div>
+                <div class="mt-4 mb-0">
+                  <div class="d-grid"><a class="btn btn-primary btn-block" href="subscriber_model.html">Update my
+                      contact information</a></div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -230,14 +237,14 @@
         <div class="card border-info" style="min-width: 10rem;">
           <div class="card-header"><img width="18%" src="../shortLogo.png"> My ask help </div>
           <div class="card-body">
-            <form>
+            <form action="../darkly/helps_model.html">
               <fieldset>
                 <legend>Hello Mr. DURANT</legend>
                 <div class="form-group">
                   <label for="exampleInputEmail1" class="form-label mt-4">Change my mail address for login, if I
                     want</label>
-                  <input value="jacques.durant@example.com" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter email">
+                  <input value="jacques.durant@example.com" type="email" class="form-control" id="exampleInputEmail1"
+                    aria-describedby="emailHelp" placeholder="Enter email">
                   <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                     else. Update for login (Empty = no change)</small>
                 </div>

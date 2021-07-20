@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>mySupport - Technician view </title>
+  <title>Technician - mySupport</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -67,6 +67,11 @@
               <a class="dropdown-item" href="../clean/index.html">Logout</a>
             </div>
           </li>
+          <!-- start only on subscriber model and technicien model -->
+          <li class="nav-item">
+            <a class="nav-link" href="../darkly/helps_model.html">List of applications for help</a>
+          </li>
+          <!-- end only on subscriber model and technicien model -->
         </ul>
         <form class="d-flex">
           <input class="form-control me-sm-2" type="text" placeholder="Search">
@@ -144,7 +149,7 @@
               </div>
             </div>
             <hr>
-          <!--</div>
+            <!--</div>
           <div class="card-body">-->
             <h4 class="card-title">My infrastructure</h4>
             <p class="card-text">Everything's fine in my infrastructure!</p>
@@ -239,7 +244,7 @@
         <div class="card border-info" style="min-width: 10rem;">
           <div class="card-header"><img width="18%" src="../shortLogo.png"> his application for assistance </div>
           <div class="card-body">
-            <form>
+            <form action="../darkly/helps_model.html">
               <fieldset>
                 <legend>Mr. DURANT</legend>
                 <div class="form-check form-switch">
@@ -310,9 +315,9 @@
                 </div>
                 <div class="form-group">
                   <label for="explanationTextarea" class="form-label mt-4 text-success">My answer</label>
-                  <textarea id="explanationTextarea" class="form-control" value=""
-                    rows="3"></textarea>
-                  <small id="explanationTextarea" class="form-text text-muted">Lien vers la base de connaissance ... (stretch field at the bottom right)</small>
+                  <textarea id="explanationTextarea" class="form-control" value="" rows="3"></textarea>
+                  <small id="explanationTextarea" class="form-text text-muted">Lien vers la base de connaissance ...
+                    (stretch field at the bottom right)</small>
                 </div>
                 <legend class="mt-4">Send my answer</legend>
                 <button type="submit" class="btn right btn-primary">Send</button>
