@@ -8,7 +8,8 @@
 		    <meta name="author" content=""/>
 		{% endblock %}
 
-		<!--<title>MySupport - Team engagement</title>-->
+        {% block meta_comp %}{% endblock %}
+
 		<title>
 			{% block title %}MySupport - Team engagement
 			{% endblock %}
@@ -16,13 +17,16 @@
 
 		{% block stylesheets %}
 			{#{{ encore_entry_link_tags('app') }}#}
-			<!--<link rel="icon" type="image/x-icon" href="../favicon.ico" />-->
 		    <link rel="icon" type="image/x-icon" href="{{ asset('clean/assets/favicon.ico') }}"/> <!-- Font Awesome icons (free version)-->
 		{% endblock %}
+
+        {% block stylesheets_comp %}{% endblock %}
 
         {% block head_js %}
 		    <script src="{{ asset('clean/js/all.js') }}" crossorigin="anonymous"></script>
         {% endblock %}
+
+        {% block head_js_comp %}{% endblock %}
 
         {% block head_css %} 
 		    <!-- Google fonts-->
@@ -31,6 +35,9 @@
 		    <!-- Core theme CSS (includes Bootstrap)-->
 		    <link href="{{ asset('clean/css/styles.css') }}" rel="stylesheet"/>
         {% endblock %}
+
+        {% block head_css_comp %}{% endblock %}
+
 	</head>
 
 	<body>
@@ -38,9 +45,14 @@
 				           and uncomment the following Encore helpers to start using Symfony UX #}
 
         {# Navbar} #}
-        {% include "{{ asset('shared/_nav.html.twig') }}" %}
+        {% include "shared/clean/_navbar.html.twig" %}
 
         {% block body %}
+        {% endblock %}
+
+        {% include "shared/clean/_footer.html.twig" %}
+
+        {% block footer_comp %}
         {% endblock %}
 
 		{% block foot_js %}
