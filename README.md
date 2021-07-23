@@ -43,4 +43,6 @@ symfony new mySupport --version=5.3 –full
 
 ISSUE #2 : templates clean, darkly et sb-admin and model static in branch template
 
-ISSUE #3 : Factorization and twigs in branch twig
+ISSUE #3 : Factorization and twigs preparation in branch twig
+
+ISSUE #4 : Authentification : bundle user
